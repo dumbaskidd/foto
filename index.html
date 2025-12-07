@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <title>Mi foto</title>
     <style>
-      body {
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
         margin: 0;
         padding: 0;
+        height: 100%;
+        width: 100%;
+        background: #ffffff; /* mismo color que el fondo de tu foto */
       }
+
+      body {
+        display: flex;
+        align-items: center;   /* centra vertical */
+        justify-content: center; /* centra horizontal */
+      }
+
       img {
+        width: 852px;   /* el tamaño que quieres ver */
+        height: 731px;
+        object-fit: cover; /* recorta si hace falta, sin deformar */
         display: block;
-        width: 852px;   /* ancho fijo que quieres */
-        height: 731px;  /* alto fijo que quieres */
-        object-fit: cover; /* recorta si hace falta para encajar */
       }
     </style>
   </head>
